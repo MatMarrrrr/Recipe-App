@@ -1,38 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 .App {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  ;
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-button {
+  background-color: lightcoral;
+  border: none;
+  padding: 12px 20px;
+  color: #fff;
+  margin: 0px 0px 0px 12px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-button:hover {
+  cursor: pointer;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.search-engine-title-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.search-engine-title {
+  width: auto;
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Alkalami', serif;
+  margin: 0px 0px -10px 0px;
+}
+
+.recipe-block-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.recipe-block-1 p {
+  font-weight: 700;
+}
+
+.recipe-block-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-block-2 p {
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+.search-engine-query-box {
+  width: 100%;
+}
+
+.search-engine-query-text {
+  text-align: center;
+  font-size: 35px;
   color: white;
+  font-weight: 500;
+  font-family: 'Alkalami', serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.not-visivble {
+  visibility: none;
 }
