@@ -9,6 +9,7 @@
     flex-direction: column;
     background: white;
     width: 480px;
+    padding: 10px;
 }
 
 .recipe h1 {

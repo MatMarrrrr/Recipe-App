@@ -23,7 +23,7 @@
 }
 
 .search-button {
-  background-color: lightcoral;
+  background-color: rgb(236, 105, 105);
   border: none;
   padding: 12px 20px;
   color: #fff;
@@ -35,6 +35,9 @@
 
 .search-button:hover {
   cursor: pointer;
+  background-color: #F08080;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 
 .recipes {
