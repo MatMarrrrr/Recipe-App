@@ -1,4 +1,4 @@
-# Mat-Recipe-App
+# React-Recipe-App
 
 Live version: https://mat-recipe-app.herokuapp.com/
 
