@@ -1,5 +1,5 @@
 # Recipe App
-## Live version: https://relaxed-pasca-6d2cfa.netlify.app/
+## Live version: https://recipe-app-matmar.netlify.app/
 ## Used technologies
 [<img align="left" alt="React" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">][react.js]
 [<img align="left" alt="JavaScript" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;"/>][js]
