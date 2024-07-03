@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Recipe from "./Recipe";
 import "./App.css";
 
@@ -10,17 +10,17 @@ const App = () => {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    getRecipes();
-  }, [query]);
-
-  const getRecipes = async () => {
+  const getRecipes = useCallback(async () => {
     const response = await fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     );
     const data = await response.json();
     setRecipes(data.hits);
-  };
+  }, [query, APP_ID, APP_KEY]);
+
+  useEffect(() => {
+    getRecipes();
+  }, [getRecipes]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
